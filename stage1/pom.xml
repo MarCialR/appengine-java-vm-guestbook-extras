@@ -72,6 +72,7 @@
       </plugin>
 
       <plugin>
+        <gcloud_directory>${my.cloud.sdk.folder}</gcloud_directory>
         <groupId>com.google.appengine</groupId>
         <artifactId>gcloud-maven-plugin</artifactId>
         <version>${appengine.target.version}</version>
