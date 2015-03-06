@@ -29,6 +29,7 @@
   <properties>
     <appengine.target.version>1.9.17a</appengine.target.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <my.cloud.sdk.folder>/usr/local/share/google/google-cloud-sdk</my.cloud.sdk.folder>
   </properties>
 
   <dependencies>
@@ -72,11 +73,12 @@
       </plugin>
 
       <plugin>
-        <gcloud_directory>${my.cloud.sdk.folder}</gcloud_directory>
+
         <groupId>com.google.appengine</groupId>
         <artifactId>gcloud-maven-plugin</artifactId>
         <version>${appengine.target.version}</version>
         <configuration>
+          <gcloud_directory>${my.cloud.sdk.folder}</gcloud_directory>
           <gcloud_project>vmruntime-demo</gcloud_project>
         </configuration>
       </plugin>
